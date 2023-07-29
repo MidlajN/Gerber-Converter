@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(44, 55, 66)!important;
+}
+.gerber {
+    background-size: cover;
+    height: 100vh;
+    /* background-image: url('../images/pcb.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.heading {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+/* navbar button */
+.navbtn  {
+    position: relative;
+    overflow: hidden;
+    color: aliceblue !important;
+    
+}
+
+.navbtn::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #cccccc;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+.navbtn:hover::after{
+    transform: scale(1);
+}
+
+
+/* navbar heading */
+@font-face {
+    font-family: 'Anurati';
+    src: url('Anurati/Anurati-Regular.otf');
+}
+.navhead {
+    font-family: 'Anurati';
+    color: aliceblue;
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+.navhead:hover {
+    letter-spacing: 4px;
+    transform: scale(1);
+}
+
+
+/* GerberInput Section */
+.gerbersection {
+    margin: auto;
+}
